@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" style="-fx-background-color: TRANSPARENT;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.building">
+   <children>
+      <BorderPane fx:id="b1" prefHeight="200.0" prefWidth="200.0" style="-fx-background-radius: 20;" styleClass="b1" stylesheets="@market.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <top>
+            <VBox prefHeight="94.0" prefWidth="780.0" BorderPane.alignment="CENTER">
+               <children>
+                  <HBox prefHeight="27.0" prefWidth="780.0" spacing="3.0">
+                     <children>
+                        <Circle fx:id="btnClose" fill="#fc5d57" onMouseClicked="#handleMouseEvent" radius="6.0" stroke="WHITE" strokeType="INSIDE" />
+                        <Circle fill="#fdbb2d" radius="6.0" stroke="WHITE" strokeType="INSIDE" />
+                        <Circle fill="#27c941" radius="6.0" stroke="WHITE" strokeType="INSIDE" />
+                     </children>
+                     <VBox.margin>
+                        <Insets left="10.0" top="13.0" />
+                     </VBox.margin>
+                  </HBox>
+                  <HBox prefHeight="52.0" prefWidth="780.0">
+                     <children>
+                        <VBox prefHeight="52.0" prefWidth="783.0">
+                           <children>
+                              <Label fx:id="Price" text="3.75 LKH" textFill="WHITE">
+                                 <font>
+                                    <Font name="Cambria Bold" size="24.0" />
+                                 </font>
+                                 <VBox.margin>
+                                    <Insets left="20.0" />
+                                 </VBox.margin>
+                              </Label>
+                              <HBox prefHeight="100.0" prefWidth="200.0" spacing="5.0">
+                                 <children>
+                                    <Label fx:id="BHK" text="3 BHK Builder Floor For Sale in " textFill="WHITE">
+                                       <font>
+                                          <Font name="Cambria Bold Italic" size="12.0" />
+                                       </font>
+                                       <HBox.margin>
+                                          <Insets left="20.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                    <Label fx:id="address" text="Kirtri Nager,New Delhi" textFill="WHITE" underline="true" />
+                                 </children>
+                              </HBox>
+                           </children>
+                           <padding>
+                              <Insets top="-15.0" />
+                           </padding>
+                        </VBox>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </top>
+         <center>
+            <VBox prefHeight="278.0" prefWidth="779.0" BorderPane.alignment="BOTTOM_CENTER">
+               <children>
+                  <Rectangle fx:id="red" arcHeight="5.0" arcWidth="5.0" fill="#2197ff00" height="250.0" stroke="#ffffff00" strokeType="INSIDE" style="-fx-arc-height: 50; -fx-arc-width: 50;" width="720.0">
+                     <VBox.margin>
+                        <Insets left="30.0" top="-20.0" />
+                     </VBox.margin>
+                  </Rectangle>
+                  <HBox prefHeight="47.0" prefWidth="710.0" style="-fx-background-color: #949c9c; -fx-background-radius: 10;">
+                     <VBox.margin>
+                        <Insets left="50.0" right="50.0" top="-20.0" />
+                     </VBox.margin>
+                     <children>
+                        <HBox prefHeight="22.0" prefWidth="47.0">
+                           <children>
+                              <ImageView fitHeight="33.0" fitWidth="38.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@952772.png" />
+                                 </image>
+                                 <HBox.margin>
+                                    <Insets left="7.0" top="5.0" />
+                                 </HBox.margin>
+                              </ImageView>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="46.0" prefWidth="46.0">
+                           <children>
+                              <Label fx:id="Beds" prefHeight="19.0" prefWidth="45.0" text="3 Beds">
+                                 <font>
+                                    <Font name="Cambria Bold" size="14.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <Pane prefHeight="31.0" prefWidth="5.0" />
+                        <HBox prefHeight="31.0" prefWidth="35.0">
+                           <children>
+                              <ImageView fitHeight="34.0" fitWidth="39.0" pickOnBounds="true" preserveRatio="true" smooth="false">
+                                 <image>
+                                    <Image url="@pngfind.com-bathtub-png-843331.png" />
+                                 </image>
+                                 <HBox.margin>
+                                    <Insets />
+                                 </HBox.margin>
+                              </ImageView>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="46.0" prefWidth="53.0">
+                           <children>
+                              <Label fx:id="Bath" text="3 Baths">
+                                 <font>
+                                    <Font name="Cambria Bold" size="14.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </HBox>
+                        <Pane prefHeight="31.0" prefWidth="9.0" />
+                        <HBox prefHeight="31.0" prefWidth="34.0">
+                           <children>
+                              <ImageView fitHeight="35.0" fitWidth="36.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@pngwing.com.png" />
+                                 </image>
+                                 <HBox.margin>
+                                    <Insets top="1.0" />
+                                 </HBox.margin>
+                              </ImageView>
+                           </children>
+                        </HBox>
+                        <HBox alignment="CENTER" prefHeight="46.0" prefWidth="71.0">
+                           <children>
+                              <Label text="Furnished">
+                                 <font>
+                                    <Font name="Cambria Bold" size="14.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </HBox>
+                     </children>
+                  </HBox>
+               </children>
+               <BorderPane.margin>
+                  <Insets left="10.0" right="10.0" />
+               </BorderPane.margin>
+            </VBox>
+         </center>
+         <bottom>
+            <VBox prefHeight="238.0" prefWidth="800.0" BorderPane.alignment="CENTER">
+               <children>
+                  <HBox alignment="CENTER" prefHeight="80.0" prefWidth="800.0">
+                     <children>
+                        <Pane prefHeight="80.0" prefWidth="119.0" />
+                        <HBox prefHeight="54.0" prefWidth="160.0">
+                           <children>
+                              <VBox alignment="CENTER" prefHeight="54.0" prefWidth="153.0">
+                                 <children>
+                                    <Label text="Super Built-Ip Area" textFill="WHITE">
+                                       <font>
+                                          <Font name="Cambria Bold" size="16.0" />
+                                       </font>
+                                    </Label>
+                                    <Label fx:id="Area" alignment="CENTER" prefHeight="18.0" prefWidth="90.0" text="15000Sqft" textFill="#9e9393">
+                                       <font>
+                                          <Font name="Cambria Bold" size="15.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </VBox>
+                           </children>
+                        </HBox>
+                        <Pane prefHeight="54.0" prefWidth="39.0" />
+                        <HBox prefHeight="54.0" prefWidth="83.0">
+                           <children>
+                              <VBox alignment="CENTER" prefHeight="54.0" prefWidth="86.0">
+                                 <children>
+                                    <Label text="Floor" textFill="WHITE">
+                                       <font>
+                                          <Font name="Cambria Bold" size="16.0" />
+                                       </font>
+                                    </Label>
+                                    <Label fx:id="floor" alignment="CENTER" prefHeight="18.0" prefWidth="90.0" text="4  Floor" textFill="#9e9393">
+                                       <font>
+                                          <Font name="Cambria Bold" size="15.0" />
+                                       </font>
+                                    </Label>
+                                 </children></VBox>
+                           </children>
+                        </HBox>
+                        <Pane prefHeight="54.0" prefWidth="21.0" />
+                        <HBox prefHeight="54.0" prefWidth="140.0">
+                           <children>
+                              <VBox alignment="CENTER" prefHeight="54.0" prefWidth="133.0">
+                                 <children>
+                                    <Label text="Transaction Type" textFill="WHITE">
+                                       <font>
+                                          <Font name="Cambria Bold" size="16.0" />
+                                       </font>
+                                    </Label>
+                                    <Label fx:id="transctionType" alignment="CENTER" prefHeight="18.0" prefWidth="90.0" text="For Rent" textFill="#9e9393">
+                                       <font>
+                                          <Font name="Cambria Bold" size="15.0" />
+                                       </font>
+                                    </Label>
+                                 </children></VBox>
+                           </children>
+                        </HBox>
+                        <Pane prefHeight="80.0" prefWidth="60.0" />
+                        <HBox prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <VBox alignment="CENTER_LEFT" prefHeight="54.0" prefWidth="190.0">
+                                 <children>
+                                    <Label text="Status" textFill="WHITE">
+                                       <font>
+                                          <Font name="Cambria Bold" size="16.0" />
+                                       </font>
+                                    </Label>
+                                    <Label fx:id="Area12" prefHeight="20.0" prefWidth="134.0" text="Reday to Move" textFill="#9e9393">
+                                       <font>
+                                          <Font name="Cambria Bold" size="15.0" />
+                                       </font>
+                                    </Label>
+                                 </children></VBox>
+                           </children>
+                        </HBox>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="49.0" prefWidth="780.0">
+                     <children>
+                        <HBox prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <VBox alignment="CENTER" prefHeight="50.0" prefWidth="206.0">
+                                 <children>
+                                    <Label text="Furnished Status" textFill="WHITE">
+                                       <font>
+                                          <Font name="Cambria Bold" size="16.0" />
+                                       </font>
+                                    </Label>
+                                    <Label fx:id="Area13" alignment="CENTER" prefHeight="18.0" prefWidth="90.0" text="Furnished" textFill="#9e9393">
+                                       <font>
+                                          <Font name="Cambria Bold" size="15.0" />
+                                       </font>
+                                    </Label>
+                                 </children>
+                              </VBox>
+                           </children>
+                        </HBox>
+                     </children></HBox>
+                  <HBox alignment="TOP_CENTER" prefHeight="50.0" prefWidth="780.0">
+                     <children>
+                        <Button alignment="TOP_CENTER" mnemonicParsing="false" onAction="#conform" prefHeight="34.0" prefWidth="162.0" style="-fx-background-color: #949c9c; -fx-background-radius: 100;" text="Confirm">
+                           <font>
+                              <Font name="Cambria Bold" size="16.0" />
+                           </font>
+                           <effect>
+                              <DropShadow height="18.66" offsetY="5.0" radius="4.165" width="0.0">
+                                 <color>
+                                    <Color red="0.1282261162996292" green="0.13109812140464783" blue="0.13684210181236267" />
+                                 </color>
+                              </DropShadow>
+                           </effect>
+                        </Button>
+                     </children></HBox>
+               </children>
+               <BorderPane.margin>
+                  <Insets top="-10.0" />
+               </BorderPane.margin>
+            </VBox>
+         </bottom>
+      </BorderPane>
+   </children>
+</AnchorPane>

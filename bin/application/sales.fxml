@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="562.0" prefWidth="1000.0" style="-fx-background-radius: 20;" styleClass="a21" stylesheets="@market.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.salecontroller">
+   <children>
+      <Pane layoutX="101.0" layoutY="184.0" prefHeight="330.0" prefWidth="250.0" style="-fx-background-color: #FFFFFF; -fx-background-radius: 30;">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#df432a" height="86.0" layoutX="-3.0" layoutY="251.0" stroke="TRANSPARENT" strokeType="INSIDE" style="-fx-arc-height: 50; -fx-arc-width: 50;" width="259.0" />
+            <Label fx:id="sold" alignment="CENTER" layoutX="67.0" layoutY="261.0" prefHeight="48.0" prefWidth="102.0" text="01" textFill="WHITE">
+               <font>
+                  <Font name="Impact" size="58.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="77.0" fitWidth="71.0" layoutX="5.0" layoutY="29.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@for-rent-sign-board-icon.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="54.0" fitWidth="115.0" layoutX="74.0" layoutY="52.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@PngItem_169110.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="59.0" layoutY="114.0" prefHeight="25.0" prefWidth="170.0" text="Property Details">
+               <font>
+                  <Font name="Cambria Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="date" layoutX="14.0" layoutY="157.0" prefHeight="17.0" prefWidth="226.0" text="Sale Date:">
+               <font>
+                  <Font name="Cambria Italic" size="22.0" />
+               </font>
+            </Label>
+            <Label fx:id="price" layoutX="14.0" layoutY="184.0" prefHeight="17.0" prefWidth="226.0" text="Price:">
+               <font>
+                  <Font name="Cambria Italic" size="22.0" />
+               </font>
+            </Label>
+            <Label fx:id="address" layoutX="14.0" layoutY="210.0" prefHeight="17.0" prefWidth="226.0" text="Address:">
+               <font>
+                  <Font name="Cambria Italic" size="22.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Pane layoutX="371.0" layoutY="184.0" prefHeight="330.0" prefWidth="250.0" style="-fx-background-color: #FFFFFF; -fx-background-radius: 30;">
+         <children>
+            <Label fx:id="date2" layoutX="14.0" layoutY="157.0" prefHeight="17.0" prefWidth="226.0" text="Sale Date:">
+               <font>
+                  <Font name="Cambria Italic" size="22.0" />
+               </font>
+            </Label>
+            <Label fx:id="price2" layoutX="14.0" layoutY="184.0" prefHeight="17.0" prefWidth="226.0" text="Price:">
+               <font>
+                  <Font name="Cambria Italic" size="22.0" />
+               </font>
+            </Label>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#cad0dc" height="86.0" layoutX="-4.0" layoutY="251.0" stroke="TRANSPARENT" strokeType="INSIDE" style="-fx-arc-height: 50; -fx-arc-width: 50;" width="259.0" />
+            <Label fx:id="rent" alignment="CENTER" layoutX="79.0" layoutY="262.0" prefHeight="48.0" prefWidth="102.0" text="10" textFill="WHITE">
+               <font>
+                  <Font name="Impact" size="58.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="65.0" fitWidth="96.0" layoutY="32.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@sold-sign-board-icon.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="54.0" fitWidth="115.0" layoutX="74.0" layoutY="70.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@PngItem_169110.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="54.0" layoutY="124.0" prefHeight="22.0" prefWidth="144.0" text="Property Details">
+               <font>
+                  <Font name="Cambria Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="address2" layoutX="14.0" layoutY="210.0" prefHeight="17.0" prefWidth="226.0" text="Address:">
+               <font>
+                  <Font name="Cambria Italic" size="22.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Pane layoutX="641.0" layoutY="184.0" prefHeight="330.0" prefWidth="250.0" style="-fx-background-color: #FFFFFF; -fx-background-radius: 30;">
+         <children>
+            <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#6dbab4" height="86.0" layoutX="-5.0" layoutY="251.0" stroke="TRANSPARENT" strokeType="INSIDE" style="-fx-arc-height: 50; -fx-arc-width: 50;" width="259.0" />
+            <Label fx:id="Cash" alignment="CENTER" layoutX="3.0" layoutY="258.0" prefHeight="72.0" prefWidth="241.0" text="19" textFill="WHITE">
+               <font>
+                  <Font name="Impact" size="58.0" />
+               </font>
+            </Label>
+            <Label fx:id="date21" layoutX="14.0" layoutY="130.0" prefHeight="17.0" prefWidth="226.0" text="Total property Sold/rent">
+               <font>
+                  <Font name="Cambria Italic" size="22.0" />
+               </font>
+            </Label>
+            <Label fx:id="date211" layoutX="14.0" layoutY="160.0" prefHeight="27.0" prefWidth="241.0" text="By our Agent in  A year">
+               <font>
+                  <Font name="Cambria Italic" size="22.0" />
+               </font>
+            </Label>
+            <Label fx:id="date2111" layoutX="14.0" layoutY="190.0" prefHeight="17.0" prefWidth="226.0" text="And it's total sum;">
+               <font>
+                  <Font name="Cambria Italic" size="22.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="79.0" fitWidth="79.0" layoutX="87.0" layoutY="48.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@pngtree-vector-bank-icon-png-image_912135-removebg-preview.png" />
+               </image>
+               <effect>
+                  <ColorAdjust brightness="-1.0" />
+               </effect>
+            </ImageView>
+         </children>
+      </Pane>
+      <Text fill="#bcb8b8" layoutX="323.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" text="AGENT">
+         <font>
+            <Font name="Cambria Bold" size="40.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="208.0" fitWidth="321.0" layoutX="79.0" layoutY="20.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@house-of-illustration-design-drawing-infographic-png-favpng-QgAb1Q7DZuJ0Gxvzzp8kwmwme-removebg-preview.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="210.0" fitWidth="263.0" layoutX="363.0" layoutY="32.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@210-2107074_cartoon-office-building-clip-art-office-building-png-removebg-preview.png" />
+         </image>
+      </ImageView>
+      <Text fill="#9e9898" layoutX="462.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sale Report">
+         <font>
+            <Font name="Cambria Italic" size="40.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="211.0" fitWidth="260.0" layoutX="653.0" layoutY="32.0" pickOnBounds="true" preserveRatio="true" AnchorPane.topAnchor="32.0">
+         <image>
+            <Image url="@euclidean-vector-infographic-icon-time-is-money-removebg-preview.png" />
+         </image>
+      </ImageView>
+      <HBox alignment="CENTER_LEFT" layoutX="10.0" layoutY="-5.0" prefHeight="46.0" prefWidth="144.0" spacing="7.0">
+         <children>
+            <Circle fx:id="btnClose" fill="#fc5d57" onMouseClicked="#handleMouseEvent" radius="6.0" stroke="WHITE" strokeType="INSIDE">
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+            </Circle>
+            <Circle fill="#fdbb2d" radius="6.0" stroke="WHITE" strokeType="INSIDE">
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+            </Circle>
+            <Circle fill="#27c941" radius="6.0" stroke="WHITE" strokeType="INSIDE">
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+            </Circle>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

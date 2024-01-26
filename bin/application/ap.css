@@ -1,0 +1,6 @@
+.prime{
+-fx-background-color:TRANSPARENT;
+}
+.about:hover{
+	-fx-text-fill: linear-gradient( to top left,#3A94F4,#5523AC);
+}

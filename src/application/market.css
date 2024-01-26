@@ -1,0 +1,70 @@
+.search-box{
+	-fx-background-color:#ffffff;
+	-fx-background-radius:100;
+}
+.scroll-pane > .viewport {
+   -fx-background-color: transparent;
+}
+.scroll-pane{
+	-fx-background:#2a2e32;
+	-fx-background-color:#2a2e32;
+}
+.a21{
+	-fx-background-color:#212529;
+}
+.side{
+	-fx-background-color:#2d3136;
+}
+.sbox{
+	-fx-background-color:#2d3136;
+}
+
+.light{
+	-fx-background-color:#2d3136;
+}
+.transparent{
+	-fx-background-color:rgba(0,0,0,0);
+}
+.seach-button{
+	-fx-background-radius:30;
+}
+.right-bar{
+	-fx-background-color:#212529;
+}
+.shadow{
+	-fx-effect: dropShadow(three-pass-box,rgba(0,0,0,0.1),10.0,0.0,0.0,10.0);
+}
+.chosen-fruit-card{
+	-fx-background-color:#2d3136;
+	-fx-background-radius:30;
+	
+}
+.add-btn{
+	-fx-background-color:#838383;
+	-fx-background-radius:100;
+}
+.image{
+	-fx-border-radius:30;
+}
+.free-delivery-card{
+	-fx-background-color:#212529;
+	-fx-background-radius:30;
+	
+}
+.free-card{
+	-fx-background-color:#BAEAC3;
+	-fx-background-radius:30;
+	
+}
+.fruit-item{
+	-fx-background-radius:30;
+}
+.color{
+	-fx-background-color:linear-gradient(to top left,#fc00ff,#00dbde);
+}
+.color2{
+	-fx-background-color:linear-gradient(to top left,#00dbde,#fc00ff);
+}
+.b1{
+	-fx-background-color:linear-gradient(to top left,#232526,#414345);
+}

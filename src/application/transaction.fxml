@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="780.0" style="-fx-background-color: #212529; -fx-background-radius: 30;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.controllTransaction">
+   <children>
+      <Circle fx:id="btnClose" fill="#fc5d57" layoutX="20.0" layoutY="20.0" onMouseClicked="#handleMouseEvent" radius="6.0" stroke="WHITE" strokeType="INSIDE" />
+      <Circle fill="#fdbb2d" layoutX="36.0" layoutY="20.0" radius="6.0" stroke="WHITE" strokeType="INSIDE" />
+      <Circle fill="#27c941" layoutX="54.0" layoutY="20.0" radius="6.0" stroke="WHITE" strokeType="INSIDE" />
+      <VBox blendMode="SRC_ATOP" layoutX="-25.0" layoutY="60.0" prefHeight="600.0" prefWidth="226.0" style="-fx-background-color: #2d3136; -fx-background-radius: 30;">
+         <children>
+            <VBox alignment="CENTER" prefHeight="86.0" prefWidth="226.0">
+               <children>
+                  <ImageView fitHeight="105.0" fitWidth="144.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@t.png" />
+                     </image>
+                  </ImageView>
+                  <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="22.0" prefWidth="131.0" text="4Diwar.com" textFill="#a69e9e">
+                     <font>
+                        <Font name="Impact" size="20.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets top="-6.0" />
+                     </VBox.margin>
+                  </Label>
+               </children>
+               <VBox.margin>
+                  <Insets left="40.0" />
+               </VBox.margin>
+            </VBox>
+            <Pane prefHeight="43.0" prefWidth="226.0" />
+            <VBox prefHeight="389.0" prefWidth="226.0">
+               <children>
+                  <HBox fx:id="t1" alignment="CENTER" prefHeight="66.0" prefWidth="226.0" styleClass="t1" stylesheets="@application.css">
+                     <children>
+                        <Button alignment="CENTER_RIGHT" graphicTextGap="0.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="212.0" style="-fx-background-color: TRANSPARENT;" text="Transaction" textAlignment="CENTER" textFill="WHITE">
+                           <font>
+                              <Font name="Impact" size="16.0" />
+                           </font>
+                           <graphic>
+                              <ImageView fitHeight="33.0" fitWidth="85.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@png-transparent-computer-icons-financial-transaction-desktop-others-miscellaneous-service-logo-removebg-preview.png" />
+                                 </image>
+                                 <effect>
+                                    <ColorAdjust brightness="1.0" />
+                                 </effect>
+                              </ImageView>
+                           </graphic>
+                           <HBox.margin>
+                              <Insets left="-10.0" />
+                           </HBox.margin>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Button>
+                     </children>
+                  </HBox>
+                  <HBox fx:id="t2" alignment="TOP_CENTER" prefHeight="58.0" prefWidth="226.0" styleClass="t2" stylesheets="@application.css">
+                     <children>
+                        <Button alignment="TOP_RIGHT" mnemonicParsing="false" prefHeight="26.0" prefWidth="212.0" style="-fx-background-color: TRANSPARENT;" text="Banking" textAlignment="CENTER" textFill="WHITE">
+                           <font>
+                              <Font name="Impact" size="16.0" />
+                           </font>
+                           <graphic>
+                              <ImageView fitHeight="40.0" fitWidth="41.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@pngtree-vector-bank-icon-png-image_912135-removebg-preview.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                           <HBox.margin>
+                              <Insets left="-75.0" />
+                           </HBox.margin>
+                        </Button>
+                     </children>
+                  </HBox>
+                  <HBox fx:id="t3" alignment="TOP_CENTER" prefHeight="26.0" prefWidth="142.0" styleClass="t3" stylesheets="@application.css">
+                     <children>
+                        <Button alignment="TOP_RIGHT" mnemonicParsing="false" prefHeight="26.0" prefWidth="212.0" style="-fx-background-color: TRANSPARENT;" text="Agnet Contact" textAlignment="CENTER" textFill="WHITE">
+                           <font>
+                              <Font name="Impact" size="16.0" />
+                           </font>
+                           <graphic>
+                              <ImageView fitHeight="40.0" fitWidth="41.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@2915.9-support-agent-icon-iconbunny-removebg-preview.png" />
+                                 </image>
+                              </ImageView>
+                           </graphic>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </Button>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+         <effect>
+            <DropShadow height="42.11" offsetX="5.0" radius="17.615000000000002" width="30.35">
+               <color>
+                  <Color red="0.11578947305679321" green="0.1054970771074295" blue="0.1054970771074295" />
+               </color>
+            </DropShadow>
+         </effect>
+      </VBox>
+      <VBox blendMode="ADD" layoutX="203.0" layoutY="52.0" prefHeight="470.0" prefWidth="578.0">
+         <children>
+            <Pane prefHeight="50.0" prefWidth="578.0" />
+            <HBox prefHeight="165.0" prefWidth="578.0" spacing="10.0">
+               <children>
+                  <Pane prefHeight="169.0" prefWidth="177.0" style="-fx-background-color: #2d3136; -fx-background-radius: 5 30 5 5;">
+                     <children>
+                        <ImageView fitHeight="84.0" fitWidth="114.0" layoutX="51.0" layoutY="24.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@505-5058091_agent-icon-png-male-profile-logo-png-transparent-removebg-preview.png" />
+                           </image>
+                        </ImageView>
+                        <Label fx:id="seller" alignment="CENTER" contentDisplay="CENTER" layoutX="16.0" layoutY="116.0" prefHeight="28.0" prefWidth="147.0" text="Abhishek Rawat" textFill="WHITE">
+                           <font>
+                              <Font name="Impact" size="16.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </Pane>
+                  <Pane layoutX="20.0" layoutY="10.0" prefHeight="166.0" prefWidth="181.0" style="-fx-background-color: #2d3136; -fx-background-radius: 5 30 5 5;">
+                     <children>
+                        <Label fx:id="property" alignment="CENTER" contentDisplay="CENTER" layoutX="17.0" layoutY="138.0" prefHeight="28.0" prefWidth="147.0" text="Abhishek Rawat" textFill="WHITE">
+                           <font>
+                              <Font name="Impact" size="16.0" />
+                           </font>
+                        </Label>
+                        <Rectangle fx:id="rec1" arcHeight="5.0" arcWidth="5.0" fill="TRANSPARENT" height="120.0" layoutX="37.0" layoutY="14.0" stroke="#948383" strokeType="OUTSIDE" strokeWidth="3.0" style="-fx-arc-height: 30; -fx-arc-width: 30;" width="100.0" />
+                     </children>
+                  </Pane>
+                  <Pane layoutX="229.0" layoutY="10.0" prefHeight="166.0" prefWidth="174.0" style="-fx-background-color: #2d3136; -fx-background-radius: 5 30 5 5;">
+                     <children>
+                        <Label fx:id="agent" alignment="CENTER" contentDisplay="CENTER" layoutX="17.0" layoutY="138.0" prefHeight="28.0" prefWidth="147.0" text="Abhishek Rawat" textFill="WHITE">
+                           <font>
+                              <Font name="Impact" size="16.0" />
+                           </font>
+                        </Label>
+                        <Rectangle fx:id="rec" arcHeight="5.0" arcWidth="5.0" fill="TRANSPARENT" height="120.0" layoutX="38.0" layoutY="12.0" stroke="#948383" strokeType="OUTSIDE" strokeWidth="3.0" style="-fx-arc-height: 30; -fx-arc-width: 30;" width="100.0" />
+                     </children>
+                  </Pane>
+               </children>
+               <padding>
+                  <Insets left="10.0" />
+               </padding>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </HBox>
+            <Pane prefHeight="0.0" prefWidth="578.0" />
+            <VBox prefHeight="210.0" prefWidth="578.0">
+               <children>
+                  <HBox prefHeight="76.0" prefWidth="578.0">
+                     <children>
+                        <HBox prefHeight="76.0" prefWidth="304.0">
+                           <children>
+                              <VBox alignment="BOTTOM_CENTER" prefHeight="76.0" prefWidth="303.0">
+                                 <children>
+                                    <Label alignment="CENTER" prefHeight="20.0" prefWidth="315.0" text="Buyer ID" textFill="WHITE">
+                                       <font>
+                                          <Font name="Cambria Bold" size="15.0" />
+                                       </font>
+                                    </Label>
+                                    <TextField fx:id="textb" alignment="CENTER" prefHeight="40.0" prefWidth="302.0" promptText="Your text here" style="-fx-background-color: #2d3136; -fx-background-radius: 5 20 5 20;" styleClass="textb" stylesheets="@application.css">
+                                       <VBox.margin>
+                                          <Insets left="30.0" right="30.0" />
+                                       </VBox.margin>
+                                    </TextField>
+                                 </children>
+                              </VBox>
+                           </children>
+                        </HBox>
+                        <HBox layoutX="10.0" layoutY="10.0" prefHeight="76.0" prefWidth="279.0">
+                           <children>
+                              <VBox alignment="BOTTOM_CENTER" prefHeight="76.0" prefWidth="276.0">
+                                 <children>
+                                    <Label alignment="CENTER" prefHeight="20.0" prefWidth="315.0" text="Rent/Sale" textFill="WHITE">
+                                       <font>
+                                          <Font name="Cambria Bold" size="15.0" />
+                                       </font>
+                                    </Label>
+                                    <TextField fx:id="type" alignment="CENTER" prefHeight="40.0" prefWidth="302.0" promptText="Your text here" style="-fx-background-color: #2d3136; -fx-background-radius: 5 20 5 20;" styleClass="type" stylesheets="@application.css">
+                                       <VBox.margin>
+                                          <Insets left="20.0" right="20.0" />
+                                       </VBox.margin>
+                                    </TextField>
+                                 </children>
+                              </VBox>
+                           </children>
+                        </HBox>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="55.0" prefWidth="578.0" />
+                  <HBox alignment="CENTER" prefHeight="67.0" prefWidth="578.0">
+                     <children>
+                        <HBox prefHeight="67.0" prefWidth="295.0">
+                           <children>
+                              <VBox prefHeight="67.0" prefWidth="281.0">
+                                 <children>
+                                    <Label alignment="CENTER" prefHeight="20.0" prefWidth="315.0" text="Mode of Paytment" textFill="WHITE">
+                                       <font>
+                                          <Font name="Cambria Bold" size="15.0" />
+                                       </font>
+                                    </Label>
+                                    <TextField fx:id="mode" alignment="CENTER" prefHeight="40.0" prefWidth="302.0" promptText="Your text here" style="-fx-background-color: #2d3136; -fx-background-radius: 5 20 5 20;" styleClass="mode" stylesheets="@application.css">
+                                       <VBox.margin>
+                                          <Insets left="15.0" right="15.0" />
+                                       </VBox.margin>
+                                    </TextField>
+                                 </children>
+                              </VBox>
+                           </children>
+                        </HBox>
+                        <HBox prefHeight="67.0" prefWidth="306.0">
+                           <children>
+                              <VBox alignment="TOP_RIGHT" prefHeight="67.0" prefWidth="305.0">
+                                 <children>
+                                    <Label alignment="CENTER" prefHeight="20.0" prefWidth="315.0" text="Date" textFill="WHITE">
+                                       <font>
+                                          <Font name="Cambria Bold" size="15.0" />
+                                       </font>
+                                    </Label>
+                                    <DatePicker fx:id="date" nodeOrientation="LEFT_TO_RIGHT" prefHeight="40.0" prefWidth="302.0" promptText="Your Date here" style="-fx-background-color: #2d3136;" stylesheets="@application.css">
+                                       <VBox.margin>
+                                          <Insets left="20.0" right="20.0" />
+                                       </VBox.margin>
+                                    </DatePicker>
+                                 </children>
+                              </VBox>
+                           </children>
+                        </HBox>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </children></VBox>
+      <HBox alignment="CENTER" layoutX="258.0" layoutY="14.0" prefHeight="37.0" prefWidth="230.0" spacing="10.0" style="-fx-background-color: #2d3136; -fx-background-radius: 30;">
+         <children>
+            <TextField alignment="CENTER" prefHeight="26.0" prefWidth="108.0" promptText="Your text here" style="-fx-background-color: TRANSPARENT;" styleClass="mode" stylesheets="@application.css" />
+            <Pane prefHeight="38.0" prefWidth="22.0" />
+            <Button mnemonicParsing="false" prefHeight="26.0" prefWidth="66.0" style="-fx-background-color: #838383;; -fx-background-radius: 100;" text="Search" />
+         </children>
+      </HBox>
+      <ImageView fitHeight="24.0" fitWidth="31.0" layoutX="670.0" layoutY="17.0" opacity="0.57" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@white-notification-bell-icon-transparent-background-11638985030nycenfyruw-removebg-preview.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="23.0" fitWidth="21.0" layoutX="700.0" layoutY="17.0" opacity="0.73" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@505-5058091_agent-icon-png-male-profile-logo-png-transparent-removebg-preview.png" />
+         </image>
+         <effect>
+            <ColorAdjust brightness="0.89" contrast="0.39" />
+         </effect>
+      </ImageView>
+      <ImageView fitHeight="23.0" fitWidth="21.0" layoutX="730.0" layoutY="19.0" opacity="0.57" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@free-settings-icon-3110-thumb.png" />
+         </image>
+         <effect>
+            <ColorAdjust brightness="0.95" />
+         </effect>
+      </ImageView>
+      <Button alignment="TOP_CENTER" layoutX="390.0" layoutY="521.0" mnemonicParsing="false" onAction="#complete" prefHeight="34.0" prefWidth="162.0" style="-fx-background-color: #2d3136; -fx-background-radius: 100;" styleClass="shadow" stylesheets="@market.css" text="Confirm" textFill="WHITE">
+         <font>
+            <Font name="Cambria Bold" size="16.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

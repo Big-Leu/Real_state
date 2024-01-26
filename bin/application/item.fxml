@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="a21" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#click" prefHeight="215.0" prefWidth="225.0" stylesheets="@market.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.itemControl">
+   <children>
+      <VBox alignment="TOP_CENTER" layoutX="53.0" layoutY="-9.0" prefHeight="200.0" prefWidth="100.0" stylesheets="@market.css" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <HBox alignment="CENTER" prefHeight="58.0" prefWidth="226.0">
+               <children>
+                  <Label fx:id="nameLabel" prefHeight="30.0" prefWidth="94.0" text="Property" textFill="#c1b0b0">
+                     <HBox.margin>
+                        <Insets left="5.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="Cambria" size="24.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="priceLabel" layoutX="15.0" layoutY="10.0" prefHeight="22.0" prefWidth="105.0" text="2000" textFill="#b1a5a5">
+                     <font>
+                        <Font name="Cambria Bold Italic" size="18.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets top="5.0" />
+                     </HBox.margin>
+                  </Label>
+               </children>
+               <VBox.margin>
+                  <Insets left="20.0" right="20.0" />
+               </VBox.margin>
+            </HBox>
+            <ImageView fx:id="img" fitHeight="115.0" fitWidth="180.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@p11.jpg" />
+               </image>
+            </ImageView>
+         </children>
+         <styleClass>
+            <String fx:value="fruit-item" />
+            <String fx:value="right-bar" />
+         </styleClass>
+      </VBox>
+   </children>
+   <styleClass>
+      <String fx:value="fruit-item" />
+      <String fx:value="shadow" />
+      <String fx:value="right-bar" />
+   </styleClass>
+</AnchorPane>
