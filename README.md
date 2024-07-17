@@ -15,6 +15,9 @@ RealEstateManager offers efficient property management using SQL, JavaFX, and AW
 ### Login Screen
 ![Login Screen](./A4.png)
 
+### Market Place
+![Market Place](./A5.png)
+
 ### Agent Office
 ![Agent Office](./A6.png)
 
@@ -22,7 +25,7 @@ RealEstateManager offers efficient property management using SQL, JavaFX, and AW
 ![Agent Sale Report](./A7.png)
 
 ### Transaction Page
-![Transaction Page](./A9.png)
+![Property Description](./A8.png)
 
 ### Transaction Page
 ![Transaction Page](./A9.png)
@@ -43,5 +46,7 @@ RealEstateManager offers efficient property management using SQL, JavaFX, and AW
 
 1. Clone the repository
    ```bash
-   git clone https://github.com/yourusername/RealEstateManager.git
+   git clone https://github.com/Big-Leu/Real_state.git
+
+
 
