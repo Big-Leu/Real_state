@@ -130,7 +130,7 @@ public class singUpcontroll implements Initializable {
 		if (usertype.getValue().compareToIgnoreCase("seller") == 0) {
 			try {
 				Class.forName("com.mysql.cj.jdbc.Driver");
-				Connection con = DriverManager.getConnection("jdbc:mysql://database2.c5dg3krqvrb1.ap-south-1.rds.amazonaws.com:3306/4diwar", "root", "abhi9889");
+				Connection con = DriverManager.getConnection(System.getenv().get("DBURL"), System.getenv().get("user"), System.getenv().get("password"));
 				if (!con.isClosed()) {
 					System.out.println("Connection is established ");
 				}
@@ -153,7 +153,7 @@ public class singUpcontroll implements Initializable {
 		} else if (usertype.getValue().compareToIgnoreCase("buyer") == 0) {
 			try {
 				Class.forName("com.mysql.cj.jdbc.Driver");
-				Connection con = DriverManager.getConnection("jdbc:mysql://database2.c5dg3krqvrb1.ap-south-1.rds.amazonaws.com:3306/4diwar", "root", "abhi9889");
+				Connection con = DriverManager.getConnection(System.getenv().get("DBURL"), System.getenv().get("user"), System.getenv().get("password"));
 				if (!con.isClosed()) {
 					System.out.println("Connection is established ");
 				}
@@ -178,7 +178,7 @@ public class singUpcontroll implements Initializable {
 		} else if (usertype.getValue().compareToIgnoreCase("Agent") == 0) {
 			try {
 				Class.forName("com.mysql.cj.jdbc.Driver");
-				Connection con = DriverManager.getConnection("jdbc:mysql://database2.c5dg3krqvrb1.ap-south-1.rds.amazonaws.com:3306/4diwar", "root", "abhi9889");
+				Connection con = DriverManager.getConnection(System.getenv().get("DBURL"), System.getenv().get("user"), System.getenv().get("password"));
 				if (!con.isClosed()) {
 					System.out.println("Connection is established ");
 				}
@@ -203,7 +203,7 @@ public class singUpcontroll implements Initializable {
 		} else if (usertype.getValue().compareToIgnoreCase("realstateoffice") == 0) {
 			try {
 				Class.forName("com.mysql.cj.jdbc.Driver");
-				Connection con = DriverManager.getConnection("jdbc:mysql://database2.c5dg3krqvrb1.ap-south-1.rds.amazonaws.com:3306/4diwar", "root", "abhi9889");
+				Connection con = DriverManager.getConnection(System.getenv().get("DBURL"), System.getenv().get("user"), System.getenv().get("password"));
 				if (!con.isClosed()) {
 					System.out.println("Connection is established ");
 				}

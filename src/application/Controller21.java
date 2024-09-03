@@ -116,20 +116,24 @@ public class Controller21 implements Initializable {
 	public void getAgentID(BigDecimal id) {
 		try {
 			Class.forName("com.mysql.cj.jdbc.Driver");
-			Connection connection = DriverManager.getConnection(
-					"jdbc:mysql://database2.c5dg3krqvrb1.ap-south-1.rds.amazonaws.com:3306/4diwar", "root", "abhi9889");
+			Connection connection = DriverManager.getConnection(System.getenv().get("DBURL"), System.getenv().get("user"), System.getenv().get("password"));
 			System.out.println("Connection Established");
+			System.out.println("function called controller21");
 			Statement statement = connection.createStatement();
 			ResultSet resultSet = statement.executeQuery("select * from agent where agent_id=" + id + ";");
+			System.out.println("select * from agent where agent_id=" + id + ";");
 			Statement statement2 = connection.createStatement();
 			ResultSet resultSet2 = statement2.executeQuery(
 					"select count(agent_id) from transaction where agent_id=" + id + " and transaction_type='sale'; ");
+			System.out.println("select count(agent_id) from transaction where agent_id=" + id + " and transaction_type='sale'; ");
 			Statement statement3 = connection.createStatement();
 			ResultSet resultSet3 = statement3.executeQuery(
 					"select count(agent_id) from transaction where agent_id=" + id + " and transaction_type='rent'; ");
+			System.out.println("select count(agent_id) from transaction where agent_id=" + id + " and transaction_type='rent'; ");
 			Statement statement4 = connection.createStatement();
 			ResultSet resultSet4 = statement4
 					.executeQuery("select sum(price) from transaction where agent_id=" + id + ";");
+			System.out.println("select sum(price) from transaction where agent_id=" + id + ";");
 			while (resultSet2.next()) {
 				sold.setText(resultSet2.getString(1));
 			}
@@ -225,8 +229,7 @@ public class Controller21 implements Initializable {
 		searchTable.getItems().clear();
 		try {
 			Class.forName("com.mysql.cj.jdbc.Driver");
-			connection = DriverManager.getConnection(
-					"jdbc:mysql://database2.c5dg3krqvrb1.ap-south-1.rds.amazonaws.com:3306/4diwar", "root", "abhi9889");
+			connection = DriverManager.getConnection(System.getenv().get("DBURL"), System.getenv().get("user"), System.getenv().get("password"));
 			System.out.println("Connection Established");
 			Statement statement = connection.createStatement();
 			ResultSet resultSet = statement.executeQuery(searchTF.getText());
@@ -345,8 +348,7 @@ public class Controller21 implements Initializable {
 		Connection connection = null;
 		try {
 			Class.forName("com.mysql.cj.jdbc.Driver");
-			connection = DriverManager.getConnection(
-					"jdbc:mysql://database2.c5dg3krqvrb1.ap-south-1.rds.amazonaws.com:3306/4diwar", "root", "abhi9889");
+			connection = DriverManager.getConnection(System.getenv().get("DBURL"), System.getenv().get("user"), System.getenv().get("password"));
 			Statement statement = connection.createStatement();
 			ResultSet resultSet = statement.executeQuery("select * from property where agent_id=" + id1);
 			while (resultSet.next()) {
@@ -375,8 +377,7 @@ public class Controller21 implements Initializable {
 		Connection connection = null;
 		try {
 			Class.forName("com.mysql.cj.jdbc.Driver");
-			connection = DriverManager.getConnection(
-					"jdbc:mysql://database2.c5dg3krqvrb1.ap-south-1.rds.amazonaws.com:3306/4diwar", "root", "abhi9889");
+			connection = DriverManager.getConnection(System.getenv().get("DBURL"), System.getenv().get("user"), System.getenv().get("password"));
 			Statement statement = connection.createStatement();
 			ResultSet resultSet = statement.executeQuery("select * from transaction where agent_id=" + id1);
 //	            statement.setInt(1,id1);
@@ -404,8 +405,7 @@ public class Controller21 implements Initializable {
 		Connection connection = null;
 		try {
 			Class.forName("com.mysql.cj.jdbc.Driver");
-			connection = DriverManager.getConnection(
-					"jdbc:mysql://database2.c5dg3krqvrb1.ap-south-1.rds.amazonaws.com:3306/4diwar", "root", "abhi9889");
+			connection = DriverManager.getConnection(System.getenv().get("DBURL"), System.getenv().get("user"), System.getenv().get("password"));
 			Statement statement = connection.createStatement();
 			ResultSet resultSet = statement.executeQuery("select * from property_rented where agent_id=" + id1);
 			while (resultSet.next()) {

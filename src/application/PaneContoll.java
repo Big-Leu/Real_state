@@ -88,8 +88,7 @@ public class PaneContoll implements Initializable {
 			error.setStyle("-fx-opacity:0;");
 			agentid.setStyle("-fx-background-radius:50px;\n-fx-border-radius:50px;\n-fx-border-color:TRANSPARENT;");
 			Class.forName("com.mysql.cj.jdbc.Driver");
-			Connection con = DriverManager.getConnection(
-					"jdbc:mysql://database2.c5dg3krqvrb1.ap-south-1.rds.amazonaws.com:3306/4diwar", "root", "abhi9889");
+			Connection con = DriverManager.getConnection(System.getenv().get("DBURL"), System.getenv().get("user"), System.getenv().get("password"));
 			if (!con.isClosed()) {
 				System.out.println("Connection is established ");
 			}
@@ -109,6 +108,7 @@ public class PaneContoll implements Initializable {
 				}
 			}
 			System.out.println(flag);
+			System.out.println(agentID);
 			if (flag == 1) {
 				FXMLLoader loader = new FXMLLoader(getClass().getResource("/application/AgentProfile.fxml"));
 				root = loader.load();
@@ -195,8 +195,7 @@ public class PaneContoll implements Initializable {
 	public void realstateOffice(ActionEvent event) {
 		try {
 			Class.forName("com.mysql.cj.jdbc.Driver");
-			Connection con = DriverManager.getConnection(
-					"jdbc:mysql://database2.c5dg3krqvrb1.ap-south-1.rds.amazonaws.com:3306/4diwar", "root", "abhi9889");
+			Connection con = DriverManager.getConnection(System.getenv().get("DBURL"), System.getenv().get("user"), System.getenv().get("password"));
 			if (!con.isClosed()) {
 				System.out.println("Connection is established ");
 			}

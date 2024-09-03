@@ -89,8 +89,7 @@ public class MarketContoller implements Initializable {
 		Fruit fruit;
 		try {
 			Class.forName("com.mysql.cj.jdbc.Driver");
-			Connection con = DriverManager.getConnection(
-					"jdbc:mysql://database2.c5dg3krqvrb1.ap-south-1.rds.amazonaws.com:3306/4diwar", "root", "abhi9889");
+			Connection con = DriverManager.getConnection(System.getenv().get("DBURL"), System.getenv().get("user"), System.getenv().get("password"));
 			if (!con.isClosed()) {
 				System.out.println("Connection is established ");
 			}

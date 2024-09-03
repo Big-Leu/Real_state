@@ -69,11 +69,11 @@ public class Controller implements Initializable {
 			danger.setStyle("-fx-opacity:0");
 			error.setStyle("-fx-opacity:0;");
 			agentid.setStyle("-fx-background-radius:50px;\n-fx-border-radius:50px;\n-fx-border-color:TRANSPARENT;");
+//			System.out.println(" the url is :"+System.getenv().get("DBURL")+ "  " +System.getenv().get("username") +"  "+ System.getenv().get("password"));
 			Class.forName("com.mysql.cj.jdbc.Driver");
-			Connection con = DriverManager.getConnection(
-					"jdbc:mysql://database2.c5dg3krqvrb1.ap-south-1.rds.amazonaws.com:3306/4diwar", "root", "abhi9889");
+			Connection con = DriverManager.getConnection(System.getenv().get("DBURL"), System.getenv().get("username"), System.getenv().get("password"));
 			if (!con.isClosed()) {
-				System.out.println("Connection is established ");
+				System.out.println("Connection is established 21212 ");
 			}
 			Statement stmt = con.createStatement();
 			ResultSet set = stmt.executeQuery("select agent_id,agent_pass from agent");
@@ -91,6 +91,7 @@ public class Controller implements Initializable {
 				}
 			}
 			System.out.println(flag);
+			System.out.println(agentID);
 			if (flag == 1) {
 				System.out.println("Opening");
 				root = FXMLLoader.load(getClass().getResource("/application/AgentProfile.fxml"));
@@ -135,8 +136,7 @@ public class Controller implements Initializable {
 	public void realstateOffice(ActionEvent event) throws IOException, SQLException {
 		try {
 			Class.forName("com.mysql.cj.jdbc.Driver");
-			Connection con = DriverManager.getConnection(
-					"jdbc:mysql://database2.c5dg3krqvrb1.ap-south-1.rds.amazonaws.com:3306/4diwar", "root", "abhi9889");
+			Connection con = DriverManager.getConnection(System.getenv().get("DBURL"), System.getenv().get("username"), System.getenv().get("password"));
 			if (!con.isClosed()) {
 				System.out.println("Connection is established ");
 			}
