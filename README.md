@@ -10,25 +10,25 @@ RealEstateManager offers efficient property management using SQL, JavaFX, and AW
 ## Screenshots
 
 ### Welcome Screen
-![Welcome Screen](./A2.png)
+![Welcome Screen](.image/A2.png)
 
 ### Login Screen
-![Login Screen](./A4.png)
+![Login Screen](.image/A4.png)
 
 ### Market Place
-![Market Place](./A5.png)
+![Market Place](.image/A5.png)
 
 ### Agent Office
-![Agent Office](./A6.png)
+![Agent Office](.image/A6.png)
 
 ### Agent Sale Report
-![Agent Sale Report](./A7.png)
+![Agent Sale Report](.image/A7.png)
 
 ### Transaction Page
-![Property Description](./A8.png)
+![Property Description](.image/A8.png)
 
 ### Transaction Page
-![Transaction Page](./A9.png)
+![Transaction Page](.image/A9.png)
 
 ## Features
 
